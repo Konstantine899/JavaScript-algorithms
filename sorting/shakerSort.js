@@ -7,7 +7,7 @@ let array = [4, 2, 6, 3, 7, 3, 1, 0, 4, 9, 10, 3];
 
 shakerSort(array);
 function shakerSort(array) {
-    console.log('first array :', array);
+    // console.log('first array :', array);
 
     let left = 0; //начало массива
     let right = array.length - 1; //конец массива
@@ -22,7 +22,7 @@ function shakerSort(array) {
                 array[i + 1] = temp;
             }
         }
-        console.log('array :', array);
+        // console.log('array :', array);
         right--;
 
         for (let i = right; left < i; i--) {
@@ -33,10 +33,10 @@ function shakerSort(array) {
                 array[i - 1] = temp;
             }
         }
-        console.log('array :', array);
+        //console.log('array :', array);
         left++;
 
     } while (left < right);
-
-console.log('array :', array);
+return array;
+// console.log('array :', array);
 }
