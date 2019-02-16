@@ -4,10 +4,11 @@
 // бери код с JAVA и переноси логику
 
 let array = [4, 2, 6, 3, 7, 3, 1, 0, 4, 9, 10, 3];
+console.log();
 
 shakerSort(array);
 function shakerSort(array) {
-    // console.log('first array :', array);
+    console.log('first array :', array);
 
     let left = 0; //начало массива
     let right = array.length - 1; //конец массива
