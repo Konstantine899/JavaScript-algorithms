@@ -6,12 +6,13 @@
 
 console.log(' quickSort ');
 const array = [4, 2, 6, 3, 7, 3, 1, 0, 4, 9, 10, 3];
-// console.log('Sorting :', quickSort(array));
+console.log('Sorting :', quickSort(array));
 function quickSort(array) {
-    const arrayLength = array.length;
-    if (arrayLength < 2) return array;
+    // const arrayLength = array.length;
+    if (array.length < 2) return array;
 
-    const pivot = array[Math.floor(Math.random() * arrayLength)]; // точка опоры
+    const pivot = array[0]; // точка опоры
+    // const pivot = array[Math.floor(Math.random() * arrayLength)]; // точка опоры
     // console.log('pivot :', pivot);
     let left = [], midst = [], right = []; // левая, средняя и правая части массива
 
