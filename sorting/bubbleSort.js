@@ -8,9 +8,9 @@
 
 let array = [4, 2, 6, 3, 7, 3, 1, 0, 4, 9, 10, 3];
 
-bubbleSort(array)
+bubbleSort(array);
 function bubbleSort(array) {
-    // console.log('array :', array);
+    console.log('array :', array);
     let length = array.length; // длина массива
     for (let i = 0; i < length - 1; i++) {
         for (let j = 1; j < length; j++) {
@@ -20,7 +20,7 @@ function bubbleSort(array) {
                 array[j] = temp;
             }
         }
-        //console.log(array);
+        console.log(array);
     }
     return array;
 }
